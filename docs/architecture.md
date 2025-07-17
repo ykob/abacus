@@ -133,3 +133,16 @@
   - 登録
   - 編集
   - 削除
+
+## プロジェクト構成
+
+- `apps`: 各サービス
+  - `auth`: 認証サーバー
+  - `api`: API
+  - `ui`: UI
+- `packages`: `apps`から参照する内部的なパッケージ。PrismaClientなど。
+  - `auth-db`: 認証サーバー用データベース
+  - `api-db`: API用データベース
+  - `typescript-config`: 共通のTypeScript設定
+  - `eslint-config`: 共通のESLint設定
+  - `prettier-config`: 共通のPrettier設定
