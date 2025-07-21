@@ -1,7 +1,7 @@
 {
   "extends": "@abacus/typescript-config/nodejs.json",
   "include": [
-    "src"
+    "src/**/*.ts"
   ],
   "exclude": [
     "node_modules",
