@@ -34,6 +34,15 @@ importers:
         specifier: ^8.37.0
         version: 8.37.0(eslint@9.31.0)(typescript@5.8.3)
 
+  apps/ui:
+    devDependencies:
+      '@abacus/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@abacus/prettier-config':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config
+
   packages/eslint-config: {}
 
   packages/prettier-config: {}

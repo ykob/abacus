@@ -1,0 +1,10 @@
+{
+  "name": "@abacus/ui",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "devDependencies": {
+    "@abacus/eslint-config": "workspace:*",
+    "@abacus/prettier-config": "workspace:*"
+  }
+}
