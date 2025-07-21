@@ -5,6 +5,13 @@
   "main": "index.js",
   "devDependencies": {
     "@abacus/eslint-config": "workspace:*",
-    "@abacus/prettier-config": "workspace:*"
+    "@abacus/prettier-config": "workspace:*",
+    "@abacus/typescript-config": "workspace:*",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }

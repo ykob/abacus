@@ -21,6 +21,7 @@ export default tseslint.config(
     },
     rules: {
       ...reactPlugin.configs.recommended.rules,
+      "react/react-in-jsx-scope": "off",
     },
     settings: {
       react: {
