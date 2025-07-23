@@ -1,3 +1,3 @@
-module.exports = {
-  ...require("@abacus/prettier-config"),
-};
+import prettierConfig from '@abacus/prettier-config';
+
+export default { ...prettierConfig };
