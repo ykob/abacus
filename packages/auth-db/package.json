@@ -4,6 +4,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "migrate:dev": "prisma migrate dev"
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio"
   }
 }
