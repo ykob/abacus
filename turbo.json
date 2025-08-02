@@ -5,12 +5,12 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**"]
     },
-    "db:migrate": {
-      "cache": false
-    },
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "migrate": {
+      "cache": false
     }
   }
 }
