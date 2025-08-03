@@ -9,19 +9,19 @@ export class AppError extends Error {
 }
 
 export class ConflictError extends AppError {
-  constructor(message = "Conflict") {
+  constructor(message = 'Conflict') {
     super(message, 409);
   }
 }
 
 export class UnauthorizedError extends AppError {
-  constructor(message = "Unauthorized") {
+  constructor(message = 'Unauthorized') {
     super(message, 401);
   }
 }
 
 export class BadRequestError extends AppError {
-  constructor(message = "Bad Request") {
+  constructor(message = 'Bad Request') {
     super(message, 400);
   }
 }
