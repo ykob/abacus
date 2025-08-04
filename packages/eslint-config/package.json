@@ -2,5 +2,8 @@
   "name": "@abacus/eslint-config",
   "version": "0.0.0",
   "private": true,
-  "main": "index.js"
+  "main": "eslint.config.js",
+  "files": [
+    "eslint.config.js"
+  ]
 }

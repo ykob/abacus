@@ -12,6 +12,7 @@
     "zod": "^4.0.14"
   },
   "devDependencies": {
+    "@abacus/eslint-config": "workspace:*",
     "@abacus/typescript-config": "workspace:*",
     "@types/cookie-parser": "^1.4.9",
     "@types/express": "^5.0.3",

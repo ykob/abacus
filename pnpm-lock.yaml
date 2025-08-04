@@ -61,6 +61,9 @@ importers:
         specifier: ^4.0.14
         version: 4.0.14
     devDependencies:
+      '@abacus/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
       '@abacus/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
@@ -88,10 +91,10 @@ importers:
     devDependencies:
       '@abacus/eslint-config':
         specifier: workspace:*
-        version: file:packages/eslint-config
+        version: link:../../packages/eslint-config
       '@abacus/typescript-config':
         specifier: workspace:*
-        version: file:packages/typescript-config
+        version: link:../../packages/typescript-config
       '@types/react':
         specifier: ^19.1.8
         version: 19.1.8
@@ -124,12 +127,6 @@ importers:
   packages/typescript-config: {}
 
 packages:
-
-  '@abacus/eslint-config@file:packages/eslint-config':
-    resolution: {directory: packages/eslint-config, type: directory}
-
-  '@abacus/typescript-config@file:packages/typescript-config':
-    resolution: {directory: packages/typescript-config, type: directory}
 
   '@babel/code-frame@7.27.1':
     resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
@@ -1637,10 +1634,6 @@ packages:
     resolution: {integrity: sha512-nGFJTnJN6cM2v9kXL+SOBq3AtjQby3Mv5ySGFof5UGRHrRioSJ5iG680cYNjE/yWk671nROcpPj4hAS8nyLhSw==}
 
 snapshots:
-
-  '@abacus/eslint-config@file:packages/eslint-config': {}
-
-  '@abacus/typescript-config@file:packages/typescript-config': {}
 
   '@babel/code-frame@7.27.1':
     dependencies:
