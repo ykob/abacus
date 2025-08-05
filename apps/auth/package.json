@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "main": "index.js",
+  "scripts": {
+    "dev": "dotenv -e ../../.env -e ./.env -- nodemon src/index.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "dotenv -e ../../.env -e ./.env -- node dist/index.js"
+  },
   "dependencies": {
     "@abacus/auth-db": "workspace:*",
     "bcryptjs": "^3.0.2",
