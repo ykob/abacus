@@ -9,7 +9,7 @@
       "cache": false,
       "persistent": true
     },
-    "migrate": {
+    "migrate:dev": {
       "cache": false
     }
   }

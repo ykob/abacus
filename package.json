@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "db:migrate": "turbo run db:migrate",
+    "migrate:dev": "turbo run migrate:dev",
     "format": "prettier --write \"**/*.{ts,tsx,md,json}\""
   },
   "keywords": [],

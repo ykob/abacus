@@ -4,7 +4,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "migrate": "dotenv -e ../../.env -- prisma migrate dev",
+    "migrate:dev": "dotenv -e ../../.env -- prisma migrate dev",
     "migrate:reset": "dotenv -e ../../.env -- prisma migrate reset",
     "studio": "prisma studio"
   },
