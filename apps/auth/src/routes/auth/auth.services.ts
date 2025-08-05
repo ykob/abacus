@@ -46,7 +46,7 @@ export const loginUser = async (email: string, password: string) => {
 
   // JWTを生成
   // アクセストークン（短命）
-  const accessToken = jwt.sign({ userId: user.id, role: user.role }, env.ACCESS_TOKEN_SECRET!, {
+  const accessToken = jwt.sign({ userId: user.id }, env.ACCESS_TOKEN_SECRET!, {
     expiresIn: env.ACCESS_TOKEN_EXPIRES_IN,
   });
 
@@ -106,7 +106,7 @@ export const refreshTokens = async (refreshToken: string) => {
   }
 
   // 新しいアクセストークンとリフレッシュトークンを両方生成
-  const newAccessToken = jwt.sign({ userId: user.id, role: user.role }, env.ACCESS_TOKEN_SECRET, {
+  const newAccessToken = jwt.sign({ userId: user.id }, env.ACCESS_TOKEN_SECRET, {
     expiresIn: env.ACCESS_TOKEN_EXPIRES_IN,
   });
   const newRefreshToken = jwt.sign({ userId: user.id }, env.REFRESH_TOKEN_SECRET, {
@@ -122,7 +122,7 @@ export const refreshTokens = async (refreshToken: string) => {
     },
   });
 
-  // 8. 新しいトークンペアを返す
+  // 新しいトークンペアを返す
   return { accessToken: newAccessToken, refreshToken: newRefreshToken };
 };
 
