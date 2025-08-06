@@ -1,0 +1,24 @@
+{
+  "name": "@abacus/api",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "dotenv -e ../../.env -e ./.env -- nodemon src/index.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "dotenv -e ../../.env -e ./.env -- node dist/index.js"
+  },
+  "dependencies": {
+    "@abacus/api-db": "workspace:*",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^4.0.14"
+  },
+  "devDependencies": {
+    "@abacus/eslint-config": "workspace:*",
+    "@abacus/typescript-config": "workspace:*",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "dotenv": "^17.2.1"
+  }
+}
