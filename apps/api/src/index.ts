@@ -1,6 +1,6 @@
 import express from 'express';
-import profileRouter from './api/profiles/profiles.routes';
 import { env } from './config';
+import profileRouter from './routes/profiles/profiles.routes';
 
 const app = express();
 
