@@ -145,4 +145,3 @@
   - `api-db`: API用データベース
   - `typescript-config`: 共通のTypeScript設定
   - `eslint-config`: 共通のESLint設定
-  - `prettier-config`: 共通のPrettier設定
