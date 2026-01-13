@@ -3,7 +3,6 @@ lockfileVersion: '9.0'
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
-  injectWorkspacePackages: true
 
 importers:
 
@@ -59,7 +58,7 @@ importers:
         version: 9.0.2
       zod:
         specifier: ^4.0.14
-        version: 4.0.14
+        version: 4.1.13
     devDependencies:
       '@abacus/eslint-config':
         specifier: workspace:*
@@ -96,7 +95,7 @@ importers:
         version: 9.0.2
       zod:
         specifier: ^4.0.14
-        version: 4.0.14
+        version: 4.1.13
     devDependencies:
       '@abacus/eslint-config':
         specifier: workspace:*
@@ -1790,8 +1789,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zod@4.0.14:
-    resolution: {integrity: sha512-nGFJTnJN6cM2v9kXL+SOBq3AtjQby3Mv5ySGFof5UGRHrRioSJ5iG680cYNjE/yWk671nROcpPj4hAS8nyLhSw==}
+  zod@4.1.13:
+    resolution: {integrity: sha512-AvvthqfqrAhNH9dnfmrfKzX5upOdjUVJYFqNSlkmGf64gRaTzlPwz99IHYnVs28qYAybvAlBV+H7pn0saFY4Ig==}
 
 snapshots:
 
@@ -3739,4 +3738,4 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod@4.0.14: {}
+  zod@4.1.13: {}
